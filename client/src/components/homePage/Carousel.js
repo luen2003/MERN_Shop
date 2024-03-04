@@ -35,13 +35,13 @@ const Carousel = () => {
             className='carousel-item active'
             style={{
               backgroundImage:
-                'url("https://source.unsplash.com/RCAhiGJsUUE/1920x1080")',
+                'url("https://images.unsplash.com/photo-1561715276-a2d087060f1d")',
             }}
           >
             <div className='carousel-caption'>
-              <h5>airShop Next</h5>
+              <h5>MERN SHOP</h5>
               <p>
-                The Next Shop, but Online
+                The MERN Shop, but Online
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ const Carousel = () => {
             className='carousel-item'
             style={{
               backgroundImage:
-                'url("https://source.unsplash.com/wfh8dDlNFOk/1920x1080")',
+                'url("https://images.unsplash.com/photo-1472851294608-062f824d29cc")',
             }}
           >
             <div className='carousel-caption'>
@@ -63,7 +63,7 @@ const Carousel = () => {
             className='carousel-item'
             style={{
               backgroundImage:
-                'url("https://source.unsplash.com/lHGeqh3XhRY/1920x1080")',
+                'url("https://images.unsplash.com/photo-1607082350899-7e105aa886ae")',
             }}
           >
             <div className='carousel-caption'>
