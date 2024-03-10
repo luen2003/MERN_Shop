@@ -8,17 +8,17 @@ const users = [
     isAdmin: true,
   },
   {
-    name: 'John Doe',
+    name: 'John Street',
     email: 'john@example.com',
     password: bcrypt.hashSync('123456', 10),
   },
   {
-    name: 'Jane Doe',
+    name: 'Jane Street',
     email: 'jane@example.com',
     password: bcrypt.hashSync('123456', 10),
   },
 ]
-
+/*
 for (let i = 1; i <= 100; i++) {
   const newUser = {
     name: `User ${i}`,
@@ -27,5 +27,5 @@ for (let i = 1; i <= 100; i++) {
   };
   users.push(newUser);
 }
-
+*/
 export default users

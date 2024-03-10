@@ -72,7 +72,7 @@ const products = [
     numReviews: 0,
   },
 ]
-
+/*
 // Add 300 more products to the array
 for (let i = 1; i <= 300; i++) {
   const newProduct = {
@@ -88,5 +88,5 @@ for (let i = 1; i <= 300; i++) {
   };
   products.push(newProduct);
 }
-
+*/
 export default products
