@@ -19,7 +19,7 @@ export const NavBar = () => {
   const { cartItems } = cart
 
   return (
-    <nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top mb-5'>
+    <nav className='navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5'>
       <div className='container'>
         <LinkContainer to='/'>
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -41,7 +41,7 @@ export const NavBar = () => {
             <li className='nav-item active'>
               <LinkContainer to='/cart'>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className='nav-link'>
+                <a className='nav-link text-white'>
                   {/* {userInfo ? userInfo.name : <i className='fa fa-user'></i>} */}
                   {userInfo ? (
                     <>
@@ -58,7 +58,7 @@ export const NavBar = () => {
             </li>
             <li className='nav-item dropdown'>
               <a
-                className='nav-link dropdown-toggle'
+                className='nav-link dropdown-toggle text-white'
                 href='/'
                 id='navbarDropdown'
                 role='button'
@@ -71,7 +71,7 @@ export const NavBar = () => {
               </a>
               {/* Here's the magic. Add the .animate and .slideIn classes to your .dropdown-menu and you're all set! */}
               <div
-                className='dropdown-menu dropdown-menu-end animate slideIn'
+                className='dropdown-menu dropdown-menu-end animate slideIn bg-dark text-white'
                 aria-labelledby='navbarDropdown'
               >
                 {userInfo ? (
@@ -80,18 +80,20 @@ export const NavBar = () => {
                   // </a>
                   <div title={userInfo.name} id='username'>
                     <LinkContainer to='/profile'>
-                      <a className='dropdown-item'>My Profile</a>
+                      <a className='dropdown-item bg-dark text-white'>My Profile</a>
                     </LinkContainer>
-                    <a className='dropdown-item' onClick={logoutHandler}>
+                    <LinkContainer to='/'>
+                    <a className='dropdown-item bg-dark text-white' onClick={logoutHandler}>
                       Logout
                     </a>
+                    </LinkContainer>
                     {/* <NavDropdown.Item onClick={logoutHandler}>
                           Logout
                         </NavDropdown.Item> */}
                   </div>
                 ) : (
                   <LinkContainer to='/login'>
-                    <Nav.Link>
+                    <Nav.Link className='text-white'>
                       <i className='fas fa-user'></i> Sign In
                     </Nav.Link>
                   </LinkContainer>
@@ -101,13 +103,13 @@ export const NavBar = () => {
                   <>
                     <div className='dropdown-divider' />
                     <LinkContainer to='/admin/userlist'>
-                      <a className='dropdown-item'>Shoppers</a>
+                      <a className='dropdown-item bg-dark text-white'>Shoppers</a>
                     </LinkContainer>
                     <LinkContainer to='/admin/productlist'>
-                      <a className='dropdown-item'>Products</a>
+                      <a className='dropdown-item bg-dark text-white'>Products</a>
                     </LinkContainer>
                     <LinkContainer to='/admin/orderlist'>
-                      <a className='dropdown-item'>Orders</a>
+                      <a className='dropdown-item bg-dark text-white'>Orders</a>
                     </LinkContainer>
                   </>
                 )}

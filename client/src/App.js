@@ -18,16 +18,13 @@ import OrderListScreen from './pages/OrderListScreen'
 
 // PAGE LAYOUTS
 import { NavBar } from './layout/NavBar'
-// import NavigationBar from './layout/NavigationBar'
 import SearchBar from './layout/SearchBar'
 import Footer from './layout/Footer'
 
 const App = () => {
   return (
     <Router>
-      {/* <Header /> */}
       <NavBar />
-      {/* <NavigationBar /> */}
       <main className='py-3 mt-5'>
         <Route render={({ history }) => <SearchBar history={history} />} />
         <Route path='/order/:id' component={OrderScreen} />
