@@ -79,3 +79,6 @@ h2 {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
 }
+
+li::marker{font-size:0;}
+
