@@ -85,7 +85,7 @@ const products = [
   },
   {
     name: 'Iphone',
-    image: '/images/iphone.png',
+    image: '/images/iphone.jpg',
     description:
       'High Quality Iphone',
     brand: 'Apple',

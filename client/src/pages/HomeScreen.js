@@ -7,8 +7,7 @@ import Loader from '../components/Loader'
 import Paginate from '../components/Paginate'
 import Meta from '../components/Meta'
 import { listProducts } from '../actions/productActions'
-
-import Carousel from '../components/homePage/Carousel'
+//import Carousel from '../components/homePage/Carousel'
 import LatestProducts from '../components/homePage/LatestProducts'
 import ProductCarousel from '../components/ProductCarousel'
 
@@ -31,7 +30,6 @@ const HomeScreen = ({ match }) => {
       <Meta />
       {!keyword ? (
         <>
-          <Carousel />
           <Container>
             <h1>Top Products</h1>
             <ProductCarousel />
