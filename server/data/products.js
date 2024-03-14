@@ -71,6 +71,43 @@ const products = [
     rating: 0,
     numReviews: 0,
   },
+  {
+    name: 'DELL XPS',
+    image: '/images/laptop.png',
+    description:
+      'High quality with impressive display and sound',
+    brand: 'DELL',
+    category: 'Electronics',
+    price: 599.99,
+    countInStock: 10,
+    rating: 5,
+    numReviews: 0,
+  },
+  {
+    name: 'Iphone',
+    image: '/images/iphone.png',
+    description:
+      'High Quality Iphone',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 99.99,
+    countInStock: 10,
+    rating: 5,
+    numReviews: 0,
+  },
+  {
+    name: 'Computer Keyboard',
+    image: '/images/keyboard.jpg',
+    description:
+      'Compatible with most of computer devices',
+    brand: 'DELL',
+    category: 'Electronics',
+    price: 29.99,
+    countInStock: 10,
+    rating: 5,
+    numReviews: 0,
+  },
+
 ]
 /*
 // Add 300 more products to the array
