@@ -81,7 +81,7 @@ const products = [
     price: 599.99,
     countInStock: 10,
     rating: 5,
-    numReviews: 0,
+    numReviews: 1,
   },
   {
     name: 'Iphone',
@@ -93,7 +93,7 @@ const products = [
     price: 99.99,
     countInStock: 10,
     rating: 5,
-    numReviews: 0,
+    numReviews: 1,
   },
   {
     name: 'Computer Keyboard',
@@ -105,7 +105,7 @@ const products = [
     price: 29.99,
     countInStock: 10,
     rating: 5,
-    numReviews: 0,
+    numReviews: 1,
   },
 
 ]
