@@ -32,7 +32,9 @@ PAYPAL_CLIENT_ID = your paypal_client_id
 ### Install Dependencies
 
 ```
-npm install && cd frontend && npm install
+npm install 
+cd frontend 
+npm install
 ```
 
 ### Run
