@@ -85,7 +85,7 @@ const products = [
     numReviews: 1,
     reviews: [{
       _id: '65f30ca6103e860041ed185d',
-      name:"Admin User",
+      name:"Jane",
       rating:5,
       comment:"Good",
       user: '65f2da2354a4dd16902dd94e',
@@ -106,7 +106,7 @@ const products = [
     numReviews: 1,
     reviews: [{
       _id: '65f30ca6103e860041ed185d',
-      name:"Admin User",
+      name:"Jane",
       rating:5,
       comment:"Good",
       user: '65f2da2354a4dd16902dd94e',
@@ -127,7 +127,7 @@ const products = [
     numReviews: 1,
     reviews: [{
       _id: '65f30ca6103e860041ed185d',
-      name:"Admin User",
+      name:"Jane",
       rating:5,
       comment:"Good",
       user: '65f2da2354a4dd16902dd94e',
