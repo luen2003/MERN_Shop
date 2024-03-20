@@ -70,6 +70,7 @@ const products = [
     countInStock: 0,
     rating: 0,
     numReviews: 0,
+    
   },
   {
     name: 'DELL XPS',
@@ -82,6 +83,15 @@ const products = [
     countInStock: 10,
     rating: 5,
     numReviews: 1,
+    reviews: [{
+      _id: '65f30ca6103e860041ed185d',
+      name:"Admin User",
+      rating:5,
+      comment:"Good",
+      user: '65f2da2354a4dd16902dd94e',
+      createdAt:'2024-03-14T14:41:42.442+00:00',
+      updatedAt:'2024-03-14T14:41:42.442+00:00',
+    },]
   },
   {
     name: 'Iphone',
@@ -94,6 +104,15 @@ const products = [
     countInStock: 10,
     rating: 5,
     numReviews: 1,
+    reviews: [{
+      _id: '65f30ca6103e860041ed185d',
+      name:"Admin User",
+      rating:5,
+      comment:"Good",
+      user: '65f2da2354a4dd16902dd94e',
+      createdAt:'2024-03-14T14:41:42.442+00:00',
+      updatedAt:'2024-03-14T14:41:42.442+00:00',
+    },]
   },
   {
     name: 'Computer Keyboard',
@@ -106,10 +125,19 @@ const products = [
     countInStock: 10,
     rating: 5,
     numReviews: 1,
+    reviews: [{
+      _id: '65f30ca6103e860041ed185d',
+      name:"Admin User",
+      rating:5,
+      comment:"Good",
+      user: '65f2da2354a4dd16902dd94e',
+      createdAt:'2024-03-14T14:41:42.442+00:00',
+      updatedAt:'2024-03-14T14:41:42.442+00:00',
+    },]
   },
 
 ]
-/*
+
 // Add 300 more products to the array
 for (let i = 1; i <= 300; i++) {
   const newProduct = {
@@ -122,8 +150,10 @@ for (let i = 1; i <= 300; i++) {
     countInStock: i % 5,
     rating: 0,
     numReviews: 0,
+    createdAt:'2024-03-14T14:41:42.442+00:00',
+    updatedAt:'2024-03-14T14:41:42.442+00:00',
   };
   products.push(newProduct);
 }
-*/
+
 export default products
