@@ -66,8 +66,9 @@ const ProductEditScreen = ({ match, history }) => {
       }
 
       const { data } = await axios.post('/api/upload', formData, config)
+      const new_data = data.replace(/\\/g, "/");      
 
-      setImage(data)
+      setImage(new_data)
       setUploading(false)
     } catch (error) {
       console.error(error)
