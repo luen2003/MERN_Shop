@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Container } from 'react-bootstrap'
 import Message from '../components/Message'
@@ -11,10 +11,9 @@ import { listProducts } from '../actions/productActions'
 import LatestProducts from '../components/homePage/LatestProducts'
 import ProductCarousel from '../components/ProductCarousel'
 
-const HomeScreen = ({ match }) => {
-  const keyword = match.params.keyword
-
-  const pageNumber = match.params.pageNumber || 1
+const HomeScreen = () => {
+  // Use useParams to access the route parameters in v6
+  const { keyword, pageNumber = 1 } = useParams()  // default pageNumber to 1 if undefined
 
   const dispatch = useDispatch()
 
@@ -35,7 +34,6 @@ const HomeScreen = ({ match }) => {
             <ProductCarousel />
           </Container>
         </>
-
       ) : (
         <div className='container'>
           <Link to='/' className='btn btn-light'>
