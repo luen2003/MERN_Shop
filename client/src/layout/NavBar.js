@@ -63,7 +63,7 @@ export const NavBar = () => {
               </a>
             </LinkContainer>
           </li>
-          {userInfo.role === "seller" && (
+          {userInfo && userInfo.role === "seller" && (
           <li className="nav-item">
                     <LinkContainer to="/seller/products">
                       <a className="nav-link text-white">
